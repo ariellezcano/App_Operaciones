@@ -1,0 +1,29 @@
+.card-dashboard {
+  transition: 0.3s;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+.card-dashboard:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  border-radius: 18px;
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+.display-4 {
+  font-size: 55px;
+}
+
+table th {
+  width: 180px;
+}
