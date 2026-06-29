@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from '../compartido/guards/auth.guard';
 import { PaginaPrincipalComponent } from '../compartido/pagina-principal/pagina-principal.component';
+import { LstLocalidadesComponent } from './lst/lst-localidades/lst-localidades.component';
+import { LstLugarComponent } from './lst/lst-lugar/lst-lugar.component';
 import { PagesComponent } from './pages.component';
 
 const routes: Routes = [
@@ -15,6 +17,18 @@ const routes: Routes = [
         component: PaginaPrincipalComponent,
         canActivate: [AuthGuard],
       },
+      {
+        path: 'lst_localidades',
+        component: LstLocalidadesComponent,
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'lst_lugares',
+        component: LstLugarComponent,
+        canActivate: [AuthGuard],
+      },
+
+      
     ],
   },
 ];

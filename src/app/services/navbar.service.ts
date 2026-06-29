@@ -4,13 +4,13 @@ import { BehaviorSubject } from 'rxjs';
 
 export type NavbarModo =
   | 'principal'
-  | 'usuarios'
-  | 'sistemas'
-  | 'correos'
-  | 'conexiones'
-  | 'insumos'
-  | 'novedades'
-  | 'reportes';
+  | 'localidades'
+  | 'ordenes'
+  // | 'correos'
+  // | 'conexiones'
+  // | 'insumos'
+  // | 'novedades'
+  // | 'reportes';
 
 @Injectable({ providedIn: 'root' })
 export class NavbarService {

@@ -1,29 +1,179 @@
-.card-dashboard {
-  transition: 0.3s;
+.header-dashboard{
 
-  cursor: pointer;
+  background: linear-gradient(135deg,#0d6efd,#0a58ca);
 
-  border: none;
+  color:white;
+
+  border-radius:20px;
 }
 
-.card-dashboard:hover {
-  transform: translateY(-8px);
+.dashboard-logo{
 
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  font-size:120px;
+
+  opacity:.20;
 }
 
-.card {
-  border-radius: 18px;
+.card-stat{
+
+  border:none;
+
+  border-radius:18px;
+
+  color:white;
+
+  transition:.35s;
+
+  cursor:pointer;
+
+  overflow:hidden;
 }
 
-.card-header {
-  font-weight: 600;
+.card-stat:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:0 20px 40px rgba(0,0,0,.20);
 }
 
-.display-4 {
-  font-size: 55px;
+.card-stat .card-body{
+
+  text-align:center;
+
+  padding:28px;
 }
 
-table th {
-  width: 180px;
+.card-stat i{
+
+  font-size:42px;
+
+  margin-bottom:15px;
+
+  display:block;
+}
+
+.card-stat h2{
+
+  font-weight:700;
+
+  margin-bottom:5px;
+}
+
+.card-stat span{
+
+  font-size:15px;
+
+  opacity:.95;
+}
+
+.personas{
+
+  background:linear-gradient(135deg,#0d6efd,#4e8cff);
+}
+
+.unidades{
+
+  background:linear-gradient(135deg,#198754,#37c978);
+}
+
+.documentos{
+
+  background:linear-gradient(135deg,#fd7e14,#ffb84d);
+}
+
+.archivos{
+
+  background:linear-gradient(135deg,#6f42c1,#9d6eff);
+}
+
+.localidades{
+
+  background:linear-gradient(135deg,#20c997,#63e6be);
+}
+
+.resultados{
+
+  background:linear-gradient(135deg,#dc3545,#ff6b81);
+}
+
+.card{
+
+  border-radius:18px;
+}
+
+.card-header{
+
+  background:#f8f9fa;
+
+  font-weight:600;
+
+  font-size:18px;
+}
+
+.btn-menu{
+
+  height:120px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:10px;
+
+  border-radius:18px;
+
+  border:1px solid #dee2e6;
+
+  transition:.30s;
+
+  background:white;
+}
+
+.btn-menu:hover{
+
+  background:#0d6efd;
+
+  color:white;
+
+  transform:translateY(-5px);
+
+  box-shadow:0 15px 30px rgba(13,110,253,.25);
+}
+
+.btn-menu i{
+
+  font-size:38px;
+}
+
+.btn-menu span{
+
+  font-size:15px;
+
+  font-weight:600;
+}
+
+.table th{
+
+  width:150px;
+
+  color:#6c757d;
+}
+
+.table td{
+
+  font-weight:600;
+}
+
+@media(max-width:992px){
+
+.dashboard-logo{
+
+display:none;
+
+}
+
 }

@@ -1,0 +1,105 @@
+<div class="container-fluid my-5 px-5">
+    <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+  
+      <!-- CABECERA -->
+      <div
+        class="card-header d-flex justify-content-between align-items-center py-3"
+        style="
+          background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+          color: #f8f9fa;
+          border-bottom: 4px solid #ff9800;
+        "
+      >
+        <h3 class="m-0 fw-bold d-flex align-items-center">
+          <i class="bi bi-geo-alt-fill me-2" style="color: #ffe9c2"></i>
+          Listado de Localidades
+        </h3>
+      </div>
+  
+      <!-- CUERPO -->
+      <div class="card-body bg-light py-4">
+  
+        <!-- FILTROS -->
+        <div class="d-flex flex-wrap align-items-end gap-3 mb-4">
+  
+          <app-fil-localidades
+            (emmit)="doFound($event)"
+            class="flex-grow-1">
+          </app-fil-localidades>
+  
+        </div>
+  
+        <!-- TABLA -->
+        <div class="table-responsive rounded-4 shadow-sm bg-white w-100">
+  
+          <table class="table table-hover align-middle mb-0 w-100">
+  
+            <thead class="table-primary text-center">
+  
+              <tr>
+  
+                <th style="width: 120px">
+                  Código
+                </th>
+  
+                <th class="text-start">
+                  Localidad
+                </th>
+  
+              </tr>
+  
+            </thead>
+  
+            <tbody>
+  
+              <tr *ngFor="let item of items">
+  
+                <td class="text-center fw-semibold">
+                  {{ item.idLocalidad }}
+                </td>
+  
+                <td class="text-start">
+                  {{ item.nombre }}
+                </td>
+  
+              </tr>
+  
+              <!-- SIN DATOS -->
+  
+              <tr *ngIf="items.length === 0">
+  
+                <td colspan="2" class="py-5 text-center">
+  
+                  <i class="bi bi-geo-alt fs-1 text-secondary d-block mb-2"></i>
+  
+                  <span class="fw-semibold text-secondary fs-5">
+                    No se encontraron localidades
+                  </span>
+  
+                  <p class="text-muted mt-1">
+                    Intente modificar los filtros de búsqueda.
+                  </p>
+  
+                </td>
+  
+              </tr>
+  
+            </tbody>
+  
+          </table>
+  
+        </div>
+  
+      </div>
+  
+      <!-- FOOTER -->
+  
+      <div
+        class="card-footer text-end text-muted small bg-white border-top fw-semibold py-3">
+  
+        Total: {{ items.length }} registros
+  
+      </div>
+  
+    </div>
+  </div>

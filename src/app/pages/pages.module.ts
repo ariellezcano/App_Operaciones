@@ -7,6 +7,10 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../compartido/navbar/navbar.component';
 import { FooterComponent } from '../compartido/footer/footer.component';
 import { PaginaPrincipalComponent } from '../compartido/pagina-principal/pagina-principal.component';
+import { LstLocalidadesComponent } from './lst/lst-localidades/lst-localidades.component';
+import { FilLocalidadComponent } from './filtros/fil-localidades/fil-localidades.component';
+import { FilLugarComponent } from './filtros/fil-lugar/fil-lugar.component';
+import { LstLugarComponent } from './lst/lst-lugar/lst-lugar.component';
 //import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 
 @NgModule({
@@ -14,8 +18,11 @@ import { PaginaPrincipalComponent } from '../compartido/pagina-principal/pagina-
     PagesComponent,
     NavbarComponent,
     FooterComponent,
-    PaginaPrincipalComponent
-
+    PaginaPrincipalComponent,
+    LstLocalidadesComponent,
+    FilLocalidadComponent,
+    FilLugarComponent,
+    LstLugarComponent
   ],
   imports: [
     CommonModule,
