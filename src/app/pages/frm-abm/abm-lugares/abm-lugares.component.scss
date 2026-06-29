@@ -1,0 +1,41 @@
+/* CARD */
+.card {
+  border-radius: 1rem;
+}
+
+/* HEADER */
+.card-header {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* FORM */
+.form-control {
+  border-radius: 0.6rem;
+}
+
+label {
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+/* FOCUS */
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
+}
+
+/* BOTONES */
+.btn {
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* ESPACIADO */
+.row {
+  row-gap: 10px;
+}

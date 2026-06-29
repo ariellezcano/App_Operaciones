@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
 
-  URL: 'http://192.168.56.1:7070/api/',
+  //URL: 'http://192.168.56.1:7070/api/',
+  URL: 'http://10.125.29.15:7070/api/',
   URLPersona: 'http://10.125.31.23/api_sistemas/policia',
   URLUnidades: 'http://10.125.31.23/api_mesaEntrada/',
 };

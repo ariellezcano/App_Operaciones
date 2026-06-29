@@ -5,6 +5,7 @@ import { PaginaPrincipalComponent } from '../compartido/pagina-principal/pagina-
 import { LstLocalidadesComponent } from './lst/lst-localidades/lst-localidades.component';
 import { LstLugarComponent } from './lst/lst-lugar/lst-lugar.component';
 import { PagesComponent } from './pages.component';
+import { AbmLugaresComponent } from './frm-abm/abm-lugares/abm-lugares.component';
 
 const routes: Routes = [
   {
@@ -17,17 +18,29 @@ const routes: Routes = [
         component: PaginaPrincipalComponent,
         canActivate: [AuthGuard],
       },
+      //LOCALIDADES
       {
         path: 'lst_localidades',
         component: LstLocalidadesComponent,
         canActivate: [AuthGuard],
       },
+      //LUGARES
       {
         path: 'lst_lugares',
         component: LstLugarComponent,
         canActivate: [AuthGuard],
       },
-
+      {
+        path: 'abm_lugares',
+        component: AbmLugaresComponent,
+        canActivate: [AuthGuard],
+      },
+      {
+        path: 'abm_lugares/:id',
+        component: AbmLugaresComponent,
+        canActivate: [AuthGuard],
+      },
+      
       
     ],
   },

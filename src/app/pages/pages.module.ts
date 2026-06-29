@@ -11,6 +11,7 @@ import { LstLocalidadesComponent } from './lst/lst-localidades/lst-localidades.c
 import { FilLocalidadComponent } from './filtros/fil-localidades/fil-localidades.component';
 import { FilLugarComponent } from './filtros/fil-lugar/fil-lugar.component';
 import { LstLugarComponent } from './lst/lst-lugar/lst-lugar.component';
+import { AbmLugaresComponent } from './frm-abm/abm-lugares/abm-lugares.component';
 //import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LstLugarComponent } from './lst/lst-lugar/lst-lugar.component';
     LstLocalidadesComponent,
     FilLocalidadComponent,
     FilLugarComponent,
-    LstLugarComponent
+    LstLugarComponent,
+    AbmLugaresComponent
   ],
   imports: [
     CommonModule,
