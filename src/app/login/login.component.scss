@@ -1,86 +1,88 @@
 .login-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background: linear-gradient(
-        rgba(8, 39, 73, 0.85),
-        rgba(8, 39, 73, 0.85)
-      ),
-      url("/assets/img/fondo.jpg");
-  
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #061b35 0%,
+    #123b65 50%,
+    #071c36 100%
+  );
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 18px;
+  padding: 45px;
+  backdrop-filter: blur(8px);
+  animation: aparecer 0.7s ease;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+h2 {
+  font-weight: 700;
+  color: #0d6efd;
+  font-size: 25px;
+}
+
+.form-control {
+  height: 48px;
+}
+
+.input-group-text {
+  background: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.btn-primary {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.35);
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
   .login-card {
-  
-    width: 430px;
-  
-    background: rgba(255,255,255,.95);
-  
-    border-radius: 18px;
-  
-    padding: 45px;
-  
-    backdrop-filter: blur(8px);
+    padding: 30px 22px;
   }
-  
-  .logo{
-      width:110px;
+
+  h2 {
+    font-size: 22px;
   }
-  
-  h2{
-      font-weight:700;
-      color:#0d6efd;
+
+  .logo {
+    width: 90px;
+    height: 90px;
   }
-  
-  .form-control{
-      height:48px;
-  }
-  
-  .input-group-text{
-      background:#0d6efd;
-      color:white;
-      border:none;
-  }
-  
-  .btn-primary{
-  
-      height:50px;
-  
-      font-size:18px;
-  
-      font-weight:600;
-  
-      border-radius:10px;
-  
-      transition:.3s;
-  }
-  
-  .btn-primary:hover{
-  
-      transform:translateY(-2px);
-  
-      box-shadow:0 8px 20px rgba(13,110,253,.35);
-  
-  }
-  
-  .login-card{
-      animation: aparecer .7s;
-  }
-  
-  @keyframes aparecer{
-  
-  from{
-      opacity:0;
-      transform:translateY(30px);
-  }
-  
-  to{
-      opacity:1;
-      transform:translateY(0);
-  }
-  
-  }
+}
